@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-capivara {
+    height: 100vh;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.9), rgba(16, 16, 16, 0.9)), url('assets/backgroundCapivara.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

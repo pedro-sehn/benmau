@@ -1,0 +1,1 @@
+export const LINGUA_ESCOLHIDA = "pt-BR"
