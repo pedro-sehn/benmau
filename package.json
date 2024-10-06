@@ -1,7 +1,7 @@
 {
   "name": "benmau",
   "version": "1.0.0",
-  "main": "script.js",
+  "main": "index.html",
   "devDependencies": {
     "tailwindcss": "^3.4.13"
   },
