@@ -60,22 +60,22 @@ recognition.addEventListener("result", (e) => {
       document.querySelector("#benmauImg").src = "assets/capivara-falando.png";
       switch (rn) {
         case 0:
-          simNormalAudio.play();
+          seilaporraAudio.play();
           break;
         case 1:
-          simPutoAudio.play();
+          fodaseAudio.play();
           break;
         case 2:
-          naoNormalAudio.play();
+          simNormalAudio.play();
           break;
         case 3:
-          seilaporraAudio.play();
+          naoNormalAudio.play();
           break;
         case 4:
           naoPutoAudio.play();
           break;
         case 5:
-          fodaseAudio.play();
+          simPutoAudio.play();
           break;
         case 6:
           vaitomarnocuAudio.play();
