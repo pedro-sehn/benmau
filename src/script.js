@@ -58,6 +58,24 @@ recognition.addEventListener("result", (e) => {
       if (texts.children.length > 4) texts.children[0].remove();
       let rn = Math.floor(Math.random() * 8);
       document.querySelector("#benmauImg").src = "assets/capivara-falando.png";
+      p = document.createElement("p");
+      if (text.toLocaleLowerCase().includes("sim ou não")) {
+        switch (Math.floor(Math.random() * 4)) {
+          case 0:
+            simNormalAudio.play();
+            break;
+          case 1:
+            simPutoAudio.play();
+            break;
+          case 2:
+            naoPutoAudio.play();
+            break;
+          case 3:
+            naoNormalAudio.play();
+            break;
+        }
+        return;
+      }
       switch (rn) {
         case 0:
           seilaporraAudio.play();
@@ -84,7 +102,6 @@ recognition.addEventListener("result", (e) => {
           stopCall();
           break;
       }
-      p = document.createElement("p");
     }
   }
 });
