@@ -77,7 +77,8 @@ recognition.addEventListener("result", (e) => {
         return;
       }
       if (text.toLocaleLowerCase().includes("meu nobre")) {
-        window.open("https://br.pinterest.com/pin/among-us-bombado--1038994576513479364/")
+        document.querySelector("#benmauImg").src =
+          "assets/meunobre.jpg";
       }
       switch (rn) {
         case 0:
